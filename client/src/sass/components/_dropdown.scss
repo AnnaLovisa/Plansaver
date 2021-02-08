@@ -1,0 +1,50 @@
+.menu {
+    border: 1px solid #eee;
+    background: $white;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li button {
+            padding: 6px 20px;
+        }
+
+        li i {
+            margin-left: 20px;
+        }
+
+        li:hover {
+            background: lightseagreen;
+            padding: 0;
+            color: $white;
+        }
+    }
+}
+
+.submenu {
+    display: none;
+    border: 1px solid #eee;
+    background: $white;
+    position: absolute;
+    right: 158px;
+    top: -1px;
+    min-width: 120px;
+}
+
+.show-submenu:hover {
+    .submenu {
+        display: block;
+    }
+}
+
+.no-padding {
+    padding-left: 0px!important;
+}
+
+.m-8 {
+    margin-right: 8px;
+}

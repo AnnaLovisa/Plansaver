@@ -1,0 +1,112 @@
+.listItem {
+    margin: 4px;
+    padding: 18px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.listItems li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 8px;
+    }
+}
+
+.add-listitem div {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+.add-span {
+    margin-left: 8px;
+}
+
+.add-listitem {
+     button:first-child {
+        background-color: $color-primary-dark;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 50px;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.listitem-form {
+    margin: 8px 4px 8px 4px;
+    display: flex;
+
+    input {
+        padding: 4px;
+        border: 1px solid #eee;
+        width: 100%;
+    }
+
+    button {
+        padding: 4px 8px;
+        margin-left: 4px;
+        border: none;
+        background-color: $color-primary-dark;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.btn-container {
+    button:first-child {
+        margin-right: 8px;
+    }
+    span {
+        color: #eee;
+        font-size: 16px;
+    }
+}
+
+.fa-trash:hover {
+    color: $primary-red;
+}
+
+.fa-pencil:hover {
+    color: $primary-blue-dark;
+}
+
+/* .round {
+    position: relative;
+
+    label {
+        border: 2px solid $primary-blue;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    label:after {
+        content: "";
+    }
+
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+    input[type="checkbox"]:checked:after {
+        opacity: 1;
+    }
+} */

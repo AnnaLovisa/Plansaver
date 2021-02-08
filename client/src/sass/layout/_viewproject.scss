@@ -1,0 +1,84 @@
+.view-project {
+    //float: left;
+    //height: 72vh;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    //margin-left: 0%;
+    width: 15%;
+    background-color: $white;
+    //background-color: #30dbfc;
+    border-radius: 2px;
+    //border-right: 1px solid #eee;
+    //margin: 3rem;
+    margin: 3rem 3rem 3rem 3rem;
+    animation-name: slideIn;
+    animation-duration: 0.3s;
+    z-index: 0;
+}
+
+.hide-project {
+    position: absolute;
+    left: 0%;
+    margin: 3rem 3rem 3rem 3rem;
+    width: 15%;
+    background-color: $white;
+    border-radius: 2px;
+    //border-right: 1px solid #eee;
+    animation-name: slideOut;
+    animation-duration: 0.3s;
+    //float: left;
+    //width: 0%;
+}
+
+.btn-close-projectview {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.view__item-box {
+  h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 10px;
+    @include horizontalCenter;
+  }
+}
+
+.project-view {
+  padding: 24px 32px 24px 32px;
+
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+
+.projectview-arrow {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+}
+
+@keyframes slideIn {
+    from {
+      left: 0%;
+    }
+  
+    to {
+      left: 25%;
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      left: 25%;
+    }
+  
+    to {
+      left: 0%;
+    }
+  }

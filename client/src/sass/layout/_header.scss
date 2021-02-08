@@ -1,0 +1,74 @@
+/* .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: teal;  
+    padding: 8px;
+} */
+
+
+.header {
+    height: 80px;
+    border-radius: 2px;
+    /* background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-blue-light, 0.8),
+        rgba($primary-blue-dark, 0.8)); */
+    /* background-size: cover;
+    background-position: top; */
+    //background-color: $white;
+    background-color: $color-grey-light-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+        height: 25vh;   //95vh
+    } */
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        /* background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../img/hero.jpg); */
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        padding-left: 2.5rem;
+        //color: #FC5130;
+        background: -webkit-linear-gradient(180deg, rgba(0,133,117,1) 0%, rgba(0,200,206,1) 83%, rgba(3,189,228,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__login {
+        padding-right: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.dassbård {
+    //margin-top: 10px;
+    //background: rgb(0,133,117);
+    //background: linear-gradient(180deg, rgba(0,133,117,1) 0%, rgba(0,200,206,1) 83%, rgba(3,189,228,1) 100%);
+    background-color: $color-grey-light-1;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    &--gradient {
+        width: 100%;
+        height: 45px;
+        background: linear-gradient(180deg, #008575 0%, #00c8ce 83%, #03bde4 100%);
+    }
+}
